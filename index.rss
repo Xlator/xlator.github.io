@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>
+<title>Viktor Jackson's Git Achievements</title>
+<description></description>
+<link></link>
+<item><title>Apprentice Historian (Level 2)</title><description>Investigate the commit log using git log.</description></item>
+<item><title>Apprentice Author (Level 2)</title><description>Made 2^Level commits using git commit.</description></item>
+<item><title>Apprentice Historian (Level 1)</title><description>Investigate the commit log using git log.</description></item>
+<item><title>Let there be light</title><description>Commit without a parent.</description></item>
+<item><title>Apprentice Stone Mason (Level 1)</title><description>Added files to the index area for inclusion in the next commit with git add</description></item>
+<item><title>Weaver</title><description>Investigate old branches by using git reflog</description></item>
+<item><title>Apprentice Product Manager (Level 1)</title><description>Stash the changes in a dirty working directory away with git stash.</description></item>
+<item><title>Student</title><description>Accessed the documentation for a command with git [command] --help</description></item>
+</channel></rss>
