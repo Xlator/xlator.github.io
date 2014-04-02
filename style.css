@@ -1,35 +1,121 @@
-a:link {
-	color: gray;
-}
-a:visited {
-	color: gray;
-}
 body {
-    background-color: black;
-    color: white;
     margin: 0 auto;
-    width: 700px;
-    text-align: center;
+    padding:0 0 30px 0;
 }
-img {
-    float : right;
-    height : 50px;
-}
-li {
-    background-color: #1E2024;
-    border: 1px solid gray;
-    padding: .25em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin-bottom: .5em;
-}
-div.title {
-    font-weight: bold;
-}
+
 ul {
     text-align: left;
-    list-style-type: none;
 }
+
 #locked {
-    visibility: hidden;
+    display: none;
 }
+
+
+/*
+ * Callouts
+ *
+ * get from doc.css on bootstrap framework
+ */
+
+/* Common styles for all types */
+.bs-callout {
+  margin: 5px 0;
+  padding: 5px;
+  border-left: 3px solid #eee;
+  font-size:10px;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size:14px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+/* Variations */
+.bs-callout-danger {
+  background-color: #fdf7f7;
+  border-color: #eed3d7;
+}
+.bs-callout-danger h4 {
+  color: #b94a48;
+}
+.bs-callout-danger p {
+  color: #a94442;
+}
+
+.bs-callout-warning {
+  background-color: #faf8f0;
+  border-color: #faebcc;
+}
+.bs-callout-warning h4 {
+  color: #8a6d3b;
+}
+.bs-callout-warning p{
+    color: #8a6d3b;
+}
+
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #bce8f1;
+}
+.bs-callout-info h4 {
+  color: #34789a;
+}
+.bs-callout-info p{
+ color:#31708f;
+}
+
+.bs-callout-danger .bs-callout-link {
+color: #843534;
+}
+
+.instructions{
+    padding:10px;
+    font-size:10px;
+}
+.bs-callout-warning .bs-callout-link {
+color: #66512c;
+}
+.bs-callout-info .bs-callout-link {
+color: #245269;
+}
+.bs-callout-success .bs-callout-link {
+color: #2b542c;
+}
+
+.bs-callout .bs-callout-link {
+font-weight: bold;
+}
+.commands{
+    line-height: 20px;
+}
+
+.img-thumb {
+    border: 1px solid #f5f5f5;
+    padding: 3px;
+}
+
+.media-body {
+    padding:20px;
+}
+
+
+li{  margin: 5px 0;  padding: 5px;  border-left: 3px solid #eee;  font-size:10px;}
+.unlocked > li {  background-color: #f4f8fa;  border-color: #bce8f1;}
+.unlocked > li .title{  margin-top: 0;  margin-bottom: 5px; font-size:16px; color: #34789a;}
+.unlocked > li .info{ margin: 0 0 10px; font-size:12px; font-weight: 300;}
+.unlocked > li .info a{color: #245269; font-weight: bold;}
+.unlocked > li .info code {  background-color: #fff;border-radius: 3px;}
+
+.locked > li {  background-color: #fdf7f7;  border-color: #eed3d7;}
+.locked > li .title{  margin-top: 0;  margin-bottom: 5px; font-size:16px;color: #b94a48;}
+.locked > li .info{  margin: 0 0 10px; font-size:12px; font-weight: 300;}
+.locked > li .info a{color: #843534; font-weight: bold;}
+.locked > li .info code {  background-color: #fff;border-radius: 3px;}
+
+
+
+
