@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel>
-<title>Diego Barrio H's Git Achievements</title>
+<title>Viktor Jackson's Git Achievements</title>
 <description></description>
 <link></link>
-<item><title>Apprentice Blacksmith (Level 3)</title><description>Created a branch using git checkout -b.</description></item>
-<item><title>Apprentice Blacksmith (Level 2)</title><description>Created a branch using git checkout -b.</description></item>
-<item><title>Apprentice Blacksmith (Level 1)</title><description>Created a branch using git checkout -b.</description></item>
-<item><title>Pedantic (Level 5)</title><description>Use the flow extension to encourage an orderly and standardized branching model</description></item>
-<item><title>Socialite (Level 6)</title><description>pushed a branch to a remote repository using git push</description></item>
-<item><title>Master Author (Level 7)</title><description>Made 2^Level commits using git commit.</description></item>
-<item><title>Apprentice Web Designer (Level 1)</title><description>Instantly browse your working repository in gitweb with git instaweb</description></item>
-<item><title>Apprentice Merchant (Level 1)</title><description>Added an external repository with git remote add.</description></item>
-<item><title>Apprentice Seamstress (Level 1)</title><description>amended a commit with git commit --amend.</description></item>
-<item><title>Caretaker</title><description>Added a .gitignore file to a repository.</description></item>
-<item><title>Apprentice Locksmith (Level 1)</title><description>Add Signed-off-by line at the end of the commit log message using git commit -s.</description></item>
-<item><title>Apprentice Goldsmith (Level 1)</title><description>Reviewed patches before committing with git diff --cached.</description></item>
-<item><title>Let there be light</title><description>Commit without a parent.</description></item>
-<item><title>Apprentice Architect (Level 1)</title><description>Created a new repository with git init.</description></item>
-<item><title>Apprentice Tree Trimmer (Level 2)</title><description>Rewrite branches with git filter-branch</description></item>
-<item><title>Master Historian (Level 7)</title><description>Investigate the commit log using git log.</description></item>
-<item><title>Apprentice Tree Trimmer (Level 1)</title><description>Rewrite branches with git filter-branch</description></item>
-<item><title>Homeowner</title><description>Set global email address using git config.</description></item>
-<item><title>Baptised</title><description>Set global user name using git config.</description></item>
-<item><title>Socialite (Level 5)</title><description>pushed a branch to a remote repository using git push</description></item>
 </channel></rss>
