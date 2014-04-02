@@ -25,6 +25,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+alias link_to_git_docs="sed -e 's_git \([a-z0-9-]*\)_<code><a href=http://www.kernel.org/pub/software/scm/git/docs/git-\1.html>git-\1</a></code>_g' | sed -e 's/\/git-hooks/\/githooks/g'"
 
 function git_achievements_command
 {
@@ -405,6 +406,7 @@ function publish_achievements
         # STATS
         cat git-achievements | grep 'unlock_achievement ' | grep -v ' sed ' | grep -v '\${' | sed -e 's/.*unlock_achievement //g' -e 's/^"//g' -e 's/"$//g' -e 's/\$power/X/g' -e 's/\$count/X/g' -e 's/\$hooks/X/g' | sort | awk -F"\" \"" '{ print "<li><div class=\"title\">" $1 "</div><div class=\"info\">" $2 "</div></li>" }' | link_to_git_docs > all.html
         total=`cat all.html | wc -l`
+        echo $total
 
         unlockedCount=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | sed -e 's/Apprentice //g' -e 's/Master //g' -e 's/(.*//g' | sort | uniq | wc -l`
         levels=`clean_logged_achievements | awk '{ if (NR % 2 != 0) print $0 }' | grep Level | sed -e 's/.* //g' -e 's/)//g' | awk '{ t=t+$0 } END { print t }'`
@@ -477,8 +479,8 @@ function publish_achievements
                             done
                       echo '</ul>
                         </div>' >> index.html
-                        rm temp.html
-                        rm all.html
+                        #rm temp.html
+                        #rm all.html
                   echo "<div class=\"modal-footer\">
                             <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Cerrar</button>
                         </div>
@@ -519,11 +521,11 @@ function publish_achievements
         message="New achievement $1"
     fi
     git commit -qm "${message}"
-    git push origin gh-pages
+    git push origin bootstrap:gh-pages
 }
 
 ACTIONLOGFILE="$HOME/.git-achievements-action.log"
-ACHIEVEMENTSLOGFILE="$HOME/code/dotfiles/diegobarrioh/dotfiles/.git-achievements.log"
+ACHIEVEMENTSLOGFILE="$HOME/.git-achievements.log"
 
 if [ ! "$1" = "achievements" ] ; then
     git "$@"
